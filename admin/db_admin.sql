@@ -22,3 +22,7 @@ insert into admin_user values("oadmin",'111111',2);
 insert into admin_user values("madmin",'111111',3);
 
 select * from admin_user;
+
+-- 암호화를 위해 저장 한도를 넓힌다.
+alter table admin_user modify column pwd varchar(60);
+desc admin_user;
